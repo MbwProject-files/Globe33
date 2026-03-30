@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Firm | Globe33 | Bespoke Interior Design</title>
+    <meta name="description"
+        content="Learn about the architectural vision and philosophy of Globe33, a process-driven design firm based in Chennai and Bangalore.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assests/img/Global33_logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=11.0">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        .firm-banner {
+            height: 50vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assests/img/firm_banner.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            margin-top: 80px;
+        }
+        
+        .firm-banner-content h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: -1px;
+        }
+        
+        .firm-banner-content .eyebrow {
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .firm-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text-content {
+            padding-right: 30px;
+        }
+
+        .why-choose-list {
+            margin: 30px 0;
+            border-top: 1px solid #eee;
+        }
+
+        .why-choose-item {
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-weight: 500;
+            color: var(--primary);
+        }
+
+        .why-choose-item i {
+            color: var(--accent);
+            font-size: 14px;
+        }
+
+        .experience-box-alt {
+            position: relative;
+            background: #fff;
+            padding: 40px;
+            border: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+        }
+
+        .exp-number-large {
+            font-size: 120px;
+            font-weight: 100;
+            line-height:1;
+            color: var(--accent);
+            margin-bottom: 20px;
+            font-family: var(--font-body);
+        }
+
+        .exp-label-right {
+            text-align: left;
+            padding-left: 20px;
+            border-left: 1px solid var(--accent);
+        }
+
+        .exp-label-right span {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .philosophy-section {
+            background: var(--secondary);
+            padding: 100px 0;
+        }
+
+        .philosophy-grid {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 80px;
+            align-items: start;
+        }
+
+        .phil-heading {
+            font-size: 44px;
+            margin-bottom: 25px;
+        }
+
+        .phil-subtext {
+            color: var(--accent);
+            font-size: 12px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 30px;
+            display: block;
+        }
+
+        .phil-lead {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 1.4;
+            color: var(--primary);
+            margin-bottom: 40px;
+        }
+
+        .phil-lead::first-letter {
+            font-size: 80px;
+            float: left;
+            line-height: 0.8;
+            margin-right: 15px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .phil-body-text {
+            color: var(--text-muted);
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .architecture-graphic img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 991px) {
+            .firm-grid, .philosophy-grid {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body class="firm-page">
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <header id="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <img src="assests/img/Global33_logo.png" alt="Globe33 Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="index.html#about">About <i class="fa-solid fa-chevron-down"
+                            style="font-size: 10px; margin-left: 5px;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="firm.html">Firm</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="index.html#services">Services <i class="fa-solid fa-chevron-down"
+                            style="font-size: 10px; margin-left: 5px;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="architecture.html">Architecture</a></li>
+                        <li><a href="interiors.html">Interiors</a></li>
+                        <li><a href="construction.html">Construction</a></li>
+                        <li><a href="industrial-design.html">Industrial Design</a></li>
+                        <li><a href="statutory-process.html">Statutory Process</a></li>
+                        <li><a href="index.html#bim-modelling">BIM Modelling</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Banner -->
+        <section class="inner-banner">
+            <img src="assests/img/firm_banner.png" alt="Firm Banner" class="inner-banner-img">
+            <div class="inner-banner-overlay"></div>
+            <div class="inner-banner-content">
+                <span class="eyebrow">Our Legacy</span>
+                <h1>Architectural Excellence</h1>
+            </div>
+        </section>
+
+        <!-- Who We Are Section -->
+        <section class="section-padding" style="padding: 40px 0;">
+            <div class="container" style="padding: 0 5%; max-width: 100%;">
+                <div class="firm-grid" style="gap: 40px;">
+                    <div class="about-text-content">
+                        <span class="eyebrow eyebrow-arch">Who We Are</span>
+                        <h2 style="font-size: 34px; margin-bottom: 15px;">About Globe 33</h2>
+                        <p class="lead-text" style="margin-bottom: 15px; font-size: 1.05rem;">
+                            Globe 33 is a process-driven team of architects & interior designers based in Chennai & Bangalore. We deal each project with small interdisciplinary teams, involving the client as a design partner.
+                        </p>
+                        
+                        <div class="why-choose-list" style="margin: 15px 0;">
+                            <h4 style="margin-bottom: 10px; font-weight: 700; font-size: 12px; letter-spacing: 2px; text-transform: uppercase;">Why Choose Us</h4>
+                            <div class="why-choose-item" style="padding: 8px 0;"><i class="fa-solid fa-chevron-right"></i> Design that stands the test of time</div>
+                            <div class="why-choose-item" style="padding: 8px 0;"><i class="fa-solid fa-chevron-right"></i> Creativity rules the roost!</div>
+                            <div class="why-choose-item" style="padding: 8px 0;"><i class="fa-solid fa-chevron-right"></i> You are valued, you hold the key!</div>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-showcase" style="text-align: center;">
+                        <img src="assests/img/firm_architecture.png" alt="Architecture" style="max-width: 200px; margin-bottom: 20px; filter: grayscale(1) brightness(0.8);">
+                        <div class="experience-box-alt" style="padding: 20px;">
+                            <div class="exp-number-large" style="font-size: 80px;">12</div>
+                            <div class="exp-label-right">
+                                <span>IN ARCHITECTURE DESIGN</span>
+                                <span>YEARS OF EXPERIENCE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section class="philosophy-section" style="padding: 50px 0;">
+            <div class="container" style="padding: 0 5%; max-width: 100%;">
+                <div class="philosophy-grid" style="gap: 40px;">
+                    <div class="philosophy-image">
+                        <img src="assests/img/firm_philosophy.png" alt="Sustainable Architecture" style="width: 100%; border-radius: 4px; box-shadow: 0 15px 30px rgba(0,0,0,0.1);">
+                    </div>
+                    <div class="philosophy-content">
+                        <span class="phil-subtext">ENERGY EFFICIENT BUILDING FOR THE FUTURE</span>
+                        <h2 class="phil-heading" style="font-size: 34px; margin-bottom: 15px;">Our Philosophy</h2>
+                        
+                        <p class="phil-lead" style="font-size: 18px; margin-bottom: 20px;">
+                            We design Energy efficient buildings which help us to provide a significant reduction of the energy need for heating and cooling.
+                        </p>
+                        
+                        <div class="phil-body-text" style="font-size: 15px;">
+                            <p style="margin-bottom: 15px;">
+                                Lighting and thermal comfort is an important aspect of design as it enhances the aesthetic appeal and creates the mood, comfort and ambience of a living space.
+                            </p>
+                            <p>
+                                We adopt Bioclimatic architecture which takes into account climate and environmental conditions to help achieve thermal and visual comfort inside, working with solar energy than against it.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compact CTA -->
+        <section class="section-padding text-center" style="background: var(--primary); color: #fff; padding: 40px 0;">
+            <div class="container">
+                <h3 style="font-size: 28px; margin-bottom: 15px;">Want to partner with us?</h3>
+                <a href="index.html#contact" class="btn btn-primary" style="background: var(--white); color: var(--primary); padding: 12px 30px;">Get in Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-inspaire">
+        <div class="container">
+            <!-- Logo & Socials Moved to Col 4 for Compactness -->
+
+            <!-- Footer Grid -->
+            <div class="fi-grid">
+                <!-- Col 1: Information -->
+                <div class="fi-col">
+                    <h4 class="fi-title">Quick links</h4>
+                    <ul class="fi-links">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#projects">Projects</a></li>
+                        <li><a href="index.html#career">Career</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 2: Portfolio -->
+                <div class="fi-col">
+                    <h4 class="fi-title">Services</h4>
+                    <ul class="fi-links">
+                        <li><a href="#">Luxury Kitchens</a></li>
+                        <li><a href="#">Bespoke Bedrooms</a></li>
+                        <li><a href="#">Living Spaces</a></li>
+                        <li><a href="#">Commercial Design</a></li>
+                        <li><a href="#">Premium Repair</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact Us -->
+                <div class="fi-col">
+                    <h4 class="fi-title">Contact Us</h4>
+                    <div class="fi-contact-list">
+                        <div class="fi-contact-item">
+                            <div class="fi-icon"><i class="fa-solid fa-phone"></i></div>
+                            <a href="tel:+918056137902">+91 80561 37902</a>
+                        </div>
+                        <div class="fi-contact-item">
+                            <div class="fi-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <a href="mailto:info@globe33.in">info@globe33.in</a>
+                        </div>
+                        <div class="fi-contact-item">
+                            <div class="fi-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <span>Kumaraguru Complex, No. 2D-2nd Floor, <br>Velachery Main Road, Chennai - 600
+                                073.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Col 4: Logo & Socials -->
+                <div class="fi-col">
+                    <div class="fi-logo-small" style="margin-bottom: 25px;">
+                        <img src="assests/img/Global33_logo.png" alt="Globe33 logo"
+                            style="height: 45px; filter: brightness(0) invert(1);">
+                    </div>
+                    <h4 class="fi-title" style="margin-bottom: 20px;">Follow Us</h4>
+                    <div class="fi-social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="fi-bottom">
+                <p>Copyright © 2024. All rights reserved Global33 Powered by <a href="https://mbwit.net" target="_blank"
+                        rel="noopener noreferrer"
+                        style="color: inherit; text-decoration: none; font-weight: 600;">MBW</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

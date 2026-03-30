@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Design | Globe33 | Bespoke Luxury Interiors</title>
+    <meta name="description"
+        content="Creative and intelligent interior design solutions. From modular kitchens to lighting and flooring, we satisfy aesthetic and functional needs.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assests/img/Global33_logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=11.0">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Premium Layout Refinement */
+        .interior-editorial-section {
+            padding: 60px 0;
+            background: #fff;
+        }
+
+        /* Premium Redesigned What We Do Section */
+        .interior-editorial-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 100px;
+            align-items: center;
+        }
+
+        .ed-content-v2 {
+            border-left: 2px solid var(--accent);
+            padding-left: 40px;
+        }
+
+        .ed-title-v2 {
+            font-size: 38px;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            font-family: var(--font-heading);
+            color: var(--primary);
+        }
+
+        .ed-lead-v2 {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            color: var(--primary);
+        }
+
+        .ed-lead-v2::first-letter {
+            font-size: 70px;
+            float: left;
+            line-height: 0.8;
+            margin-right: 15px;
+            font-weight: 400;
+            color: var(--primary);
+            font-family: var(--font-heading);
+        }
+
+        .services-list-v2 {
+            list-style: none;
+        }
+
+        .service-item-v2 {
+            padding: 15px 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .service-item-v2 i {
+            color: var(--accent);
+            font-size: 12px;
+        }
+
+        /* Staggered Image Layout */
+        .image-stack-v2 {
+            position: relative;
+            height: 600px;
+        }
+
+        .img-stack-main {
+            width: 85%;
+            height: 500px;
+            object-fit: cover;
+            box-shadow: 20px 20px 60px rgba(0,0,0,0.1);
+        }
+
+        .img-stack-sub {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width: 50%;
+            height: 300px;
+            object-fit: cover;
+            border: 10px solid #fff;
+            box-shadow: 0 40px 80px rgba(0,0,0,0.15);
+        }
+
+        /* Specialized Interior Services */
+        .interior-services-section {
+            background: var(--secondary);
+            padding: 60px 0;
+        }
+
+        .int-service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .int-service-card {
+            background: var(--white);
+            padding: 35px;
+            border: 1px solid transparent;
+            transition: all 0.4s ease;
+        }
+
+        .int-service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+            border-color: var(--accent);
+        }
+
+        .int-service-card i {
+            font-size: 32px;
+            color: var(--accent);
+        }
+
+        .int-service-card h3 {
+            font-size: 20px;
+            color: var(--primary);
+        }
+
+        .int-service-card p {
+            color: var(--text-muted);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 1024px) {
+            .editorial-grid { grid-template-columns: 1fr; gap: 60px; }
+            .int-service-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+
+<body class="interiors-page">
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <header id="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <img src="assests/img/Global33_logo.png" alt="Globe33 Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="index.html#about">About <i class="fa-solid fa-chevron-down"
+                            style="font-size: 10px; margin-left: 5px;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="firm.html">Firm</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="index.html#services">Services <i class="fa-solid fa-chevron-down"
+                            style="font-size: 10px; margin-left: 5px;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="architecture.html">Architecture</a></li>
+                        <li><a href="interiors.html">Interiors</a></li>
+                                                <li><a href="construction.html">Construction</a></li>
+
+                        <li><a href="industrial-design.html">Industrial Design</a></li>
+                        <li><a href="statutory-process.html">Statutory Process</a></li>
+                        <li><a href="index.html#bim-modelling">BIM Modelling</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#careers">Career</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Banner -->
+        <section class="inner-banner">
+            <img src="assests/img/interiors_banner.png" alt="Interior Design Banner" class="inner-banner-img">
+            <div class="inner-banner-overlay"></div>
+            <div class="inner-banner-content">
+                <span class="eyebrow">Luxury Spaces</span>
+                <h1 style="margin-bottom: 0;">Interior Design</h1>
+            </div>
+        </section>
+
+        <!-- Section 2: Interior Details (Premium Redesign) -->
+        <section class="interior-editorial-section">
+            <div class="container" style="padding: 0 5%; max-width: 100%;">
+                <div class="editorial-grid">
+                    <div class="image-stack-v2">
+                        <img src="assests/img/interiors_detail.png" alt="Interior Setting" class="img-stack-main">
+                        <img src="assests/img/interiors_mood.png" alt="Design Materials" class="img-stack-sub">
+                    </div>
+
+                    <div class="ed-content-v2">
+                        <span class="eyebrow eyebrow-arch">Design Philosophy</span>
+                        <h2 class="ed-title-v2">What We Do.</h2>
+                        <h3 style="font-size: 24px; margin-bottom: 20px; font-style: italic; opacity: 0.7;">Bespoke Interior Design</h3>
+                        
+                        <p class="ed-lead-v2">
+                            We offer creative and intelligent solutions to your requirements. We know how to listen and infuse your organization's personality into a space. We conceive spaces that satisfy the client's needs for aesthetics, safety and function.
+                        </p>
+                        
+                        <ul class="services-list-v2">
+                            <li class="service-item-v2"><i class="fa-solid fa-square"></i> Implementing Design ideas</li>
+                            <li class="service-item-v2"><i class="fa-solid fa-square"></i> Modular Kitchen & Contemporary Wardrobes</li>
+                            <li class="service-item-v2"><i class="fa-solid fa-square"></i> Lighting & Flooring</li>
+                            <li class="service-item-v2"><i class="fa-solid fa-square"></i> Civil works and Electrical Works</li>
+                            <li class="service-item-v2"><i class="fa-solid fa-square"></i> False Ceiling, Wall Design and Painting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Specialized Interior Services -->
+        <section class="interior-services-section">
+            <div class="container" style="padding: 0 5%; max-width: 100%;">
+                <div style="text-align: center; margin-bottom: 50px;">
+                    <span class="eyebrow eyebrow-arch">Our Expertise</span>
+                    <h2 style="font-size: 34px;">Bespoke Solutions</h2>
+                </div>
+                
+                <div class="int-service-grid">
+                    <div class="int-service-card">
+                        <i class="fa-solid fa-kitchen-set"></i>
+                        <h3>Modular Kitchens</h3>
+                        <p>Contemporary, high-functioning kitchen systems designed for ergonomics and luxury aesthetics.</p>
+                    </div>
+                    <div class="int-service-card">
+                        <i class="fa-solid fa-couch"></i>
+                        <h3>Living Spaces</h3>
+                        <p>Infusing personality into your social zones with curated furniture and harmonious layouts.</p>
+                    </div>
+                    <div class="int-service-card">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <h3>Lighting Design</h3>
+                        <p>Setting the mood with intelligent lighting layers that enhance both function and architectural beauty.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compact Footer CTA -->
+        <section class="section-padding text-center" style="background: var(--primary); color: #fff; padding: 40px 0;">
+            <div class="container">
+                <h3 style="font-size: 28px; margin-bottom: 20px;">Ready to transform your space?</h3>
+                <a href="index.html#contact" class="btn btn-primary" style="background: var(--white); color: var(--primary); padding: 12px 30px;">Request Consultation</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-inspaire">
+        <div class="container">
+            <!-- Footer Grid -->
+            <div class="fi-grid">
+                <!-- Col 1: Information -->
+                <div class="fi-col">
+                    <h4 class="fi-title">Quick links</h4>
+                    <ul class="fi-links">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#projects">Projects</a></li>
+                        <li><a href="index.html#careers">Career</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 2: Portfolio -->
+                <div class="fi-col">
+                    <h4 class="fi-title">Services</h4>
+                    <ul class="fi-links">
+                        <li><a href="interiors.html">Interior Design</a></li>
+                        <li><a href="architecture.html">Architecture</a></li>
+                        <li><a href="#">Commercial Design</a></li>
+                        <li><a href="#">Premium Repair</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact Us -->
+                <div class="fi-col">
+                    <h4 class="fi-title">Contact Us</h4>
+                    <div class="fi-contact-list">
+                        <div class="fi-contact-item">
+                            <div class="fi-icon"><i class="fa-solid fa-phone"></i></div>
+                            <a href="tel:+918056137902">+91 80561 37902</a>
+                        </div>
+                        <div class="fi-contact-item">
+                            <div class="fi-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <a href="mailto:info@globe33.in">info@globe33.in</a>
+                        </div>
+                        <div class="fi-contact-item">
+                            <div class="fi-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <span>Kumaraguru Complex, No. 2D-2nd Floor, <br>Velachery Main Road, Chennai - 600
+                                073.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Col 4: Logo & Socials -->
+                <div class="fi-col">
+                    <div class="fi-logo-small" style="margin-bottom: 25px;">
+                        <img src="assests/img/Global33_logo.png" alt="Globe33 logo"
+                            style="height: 45px; filter: brightness(0) invert(1);">
+                    </div>
+                    <h4 class="fi-title" style="margin-bottom: 20px;">Follow Us</h4>
+                    <div class="fi-social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="fi-bottom">
+                <p>Copyright © 2024. All rights reserved Global33 Powered by <a href="https://mbwit.net" target="_blank"
+                        rel="noopener noreferrer"
+                        style="color: inherit; text-decoration: none; font-weight: 600;">MBW</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

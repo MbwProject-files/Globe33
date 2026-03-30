@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial Design | Globe33 | Product Aesthetics & Form</title>
+    <meta name="description"
+        content="Bespoke industrial design solutions from Globe33. Focus on product appearance, function, and lifecycle management from design to production phase.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assests/img/Global33_logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=11.0">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Compact Premium Editorial for Industrial */
+        .industrial-editorial-section {
+            padding: 60px 0;
+            background: #fff;
+        }
+
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .ed-content-v4 {
+            padding-right: 40px;
+        }
+
+        .ed-title-v4 {
+            font-size: 38px;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            color: var(--primary);
+            font-family: var(--font-heading);
+        }
+
+        .ed-lead-v4 {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 35px;
+            color: var(--text-main);
+            opacity: 0.9;
+            position: relative;
+        }
+
+        .ed-lead-v4::first-letter {
+            font-size: 70px;
+            float: left;
+            line-height: 0.8;
+            margin-right: 15px;
+            font-weight: 400;
+            font-family: var(--font-heading);
+            color: var(--primary);
+        }
+
+        .services-list-v4 {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding-top: 25px;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        .service-item-v4 {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .service-item-v4 i {
+            color: var(--accent);
+            font-size: 10px;
+        }
+
+        /* Image Stack Vertical */
+        .image-stack-v4 {
+            position: relative;
+            height: 550px;
+        }
+
+        .img-stack-main {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 4px;
+            box-shadow: 0 40px 80px rgba(0,0,0,0.1);
+        }
+
+        .img-stack-sub {
+            position: absolute;
+            bottom: -30px;
+            left: -30px;
+            width: 50%;
+            height: 300px;
+            object-fit: cover;
+            border: 10px solid #fff;
+            border-radius: 4px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        /* Lifecycle Phase Grid */
+        .lifecycle-section {
+            background: var(--secondary);
+            padding: 60px 0;
+        }
+
+        .lifecycle-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .phase-card {
+            background: #fff;
+            padding: 40px;
+            text-align: left;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .phase-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 4px;
+            height: 0;
+            background: var(--accent);
+            transition: height 0.3s ease;
+        }
+
+        .phase-card:hover::after {
+            height: 100%;
+        }
+
+        .phase-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+        }
+
+        @media (max-width: 1024px) {
+            .editorial-grid { grid-template-columns: 1fr; gap: 60px; }
+            .image-stack-v4 { height: 400px; }
+            .img-stack-sub { display: none; }
+            .lifecycle-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+
+<body class="industrial-design-page">
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <header id="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <img src="assests/img/Global33_logo.png" alt="Globe33 Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="index.html#about">About <i class="fa-solid fa-chevron-down"
+                            style="font-size: 10px; margin-left: 5px;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="firm.html">Firm</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="index.html#services">Services <i class="fa-solid fa-chevron-down"
+                            style="font-size: 10px; margin-left: 5px;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="architecture.html">Architecture</a></li>
+                        <li><a href="interiors.html">Interiors</a></li>
+                        <li><a href="construction.html">Construction</a></li>
+                        <li><a href="industrial-design.html">Industrial Design</a></li>
+                        <li><a href="statutory-process.html">Statutory Process</a></li>
+                        <li><a href="index.html#bim-modelling">BIM Modelling</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#careers">Career</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Banner -->
+        <section class="inner-banner">
+            <img src="assests/img/industrial_banner.png" alt="Industrial Design Banner" class="inner-banner-img">
+            <div class="inner-banner-overlay"></div>
+            <div class="inner-banner-content">
+                <span class="eyebrow">Form & Function</span>
+                <h1 style="margin-bottom: 0;">Industrial Design</h1>
+            </div>
+        </section>
+
+        <!-- Section 2: Industrial Details (Redesigned Editorial) -->
+        <section class="industrial-editorial-section">
+            <div class="container" style="padding: 0 4%; max-width: 100%;">
+                <div class="editorial-grid">
+                    <div class="ed-content-v4">
+                        <span class="eyebrow eyebrow-arch">Philosophy</span>
+                        <h2 class="ed-title-v4">Aesthetics & <br><span style="color: var(--accent);">Physical Form.</span></h2>
+                        
+                        <p class="ed-lead-v4">
+                            The focus of industrial design is on a product's appearance and function. This includes its aesthetics, user interface, and physical form. Industrial designers are concerned with the artistic and human-centric aspects of a products design. We always consider the full project life cycle from the beginning of the design phase to the production phase.
+                        </p>
+                        
+                        <ul class="services-list-v4">
+                            <li class="service-item-v4"><i class="fa-solid fa-square"></i> Designing a product's appearance & form</li>
+                            <li class="service-item-v4"><i class="fa-solid fa-square"></i> Determining a product's Function</li>
+                            <li class="service-item-v4"><i class="fa-solid fa-square"></i> User Interface (UI) Design</li>
+                            <li class="service-item-v4"><i class="fa-solid fa-square"></i> Full Project Life Cycle Management</li>
+                        </ul>
+                    </div>
+
+                    <div class="image-stack-v4">
+                        <img src="assests/img/industrial_banner.png" alt="Industrial Studio" class="img-stack-main">
+                        <img src="assests/img/industrial_detail.png" alt="Product Detail" class="img-stack-sub">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Design Process Lifecycle -->
+        <section class="lifecycle-section">
+            <div class="container" style="padding: 0 4%; max-width: 100%;">
+                <div style="text-align: center; margin-bottom: 50px;">
+                    <span class="eyebrow eyebrow-arch">Our Lifecycle</span>
+                    <h2 style="font-size: 34px;">Conceptualization to Production</h2>
+                </div>
+                
+                <div class="lifecycle-grid">
+                    <div class="phase-card">
+                        <span class="eyebrow" style="color: var(--accent);">PHASE 01</span>
+                        <h3 style="margin: 15px 0;">Design Phase</h3>
+                        <p style="font-size: 14px; color: var(--text-muted);">Artistic exploration focused on human-centric aspects, ergonomics, and aesthetic refinement.</p>
+                    </div>
+                    <div class="phase-card">
+                        <span class="eyebrow" style="color: var(--accent);">PHASE 02</span>
+                        <h3 style="margin: 15px 0;">Interaction Phase</h3>
+                        <p style="font-size: 14px; color: var(--text-muted);">Developing the User Interface (UI) and ensuring a seamless, intuitive physical experience.</p>
+                    </div>
+                    <div class="phase-card">
+                        <span class="eyebrow" style="color: var(--accent);">PHASE 03</span>
+                        <h3 style="margin: 15px 0;">Production Phase</h3>
+                        <p style="font-size: 14px; color: var(--text-muted);">Overseeing the full transition from prototype to final high-fidelity physical form.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compact Footer CTA -->
+        <section class="section-padding text-center" style="background: var(--primary); color: #fff; padding: 40px 0;">
+            <div class="container">
+                <h3 style="font-size: 28px; margin-bottom: 20px;">Have a product concept in mind?</h3>
+                <a href="index.html#contact" class="btn btn-primary" style="background: var(--white); color: var(--primary); padding: 12px 30px;">Let's Collaborate</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-inspaire">
+        <div class="container">
+            <div class="fi-grid">
+                <!-- Col 1: Information -->
+                <div class="fi-col">
+                    <h4 class="fi-title">Quick links</h4>
+                    <ul class="fi-links">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#projects">Projects</a></li>
+                        <li><a href="index.html#careers">Career</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 2: Portfolio -->
+                <div class="fi-col">
+                    <h4 class="fi-title">Services</h4>
+                    <ul class="fi-links">
+                        <li><a href="industrial-design.html">Industrial Design</a></li>
+                        <li><a href="architecture.html">Architecture</a></li>
+                        <li><a href="interiors.html">Interior Design</a></li>
+                        <li><a href="construction.html">Civil Construction</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact Us -->
+                <div class="fi-col">
+                    <h4 class="fi-title">Contact Us</h4>
+                    <div class="fi-contact-list">
+                        <div class="fi-contact-item">
+                            <div class="fi-icon"><i class="fa-solid fa-phone"></i></div>
+                            <a href="tel:+918056137902">+91 80561 37902</a>
+                        </div>
+                        <div class="fi-contact-item">
+                            <div class="fi-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <a href="mailto:info@globe33.in">info@globe33.in</a>
+                        </div>
+                        <div class="fi-contact-item">
+                            <div class="fi-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <span>Kumaraguru Complex, No. 2D-2nd Floor, <br>Velachery Main Road, Chennai - 600
+                                073.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Col 4: Logo & Socials -->
+                <div class="fi-col">
+                    <div class="fi-logo-small" style="margin-bottom: 25px;">
+                        <img src="assests/img/Global33_logo.png" alt="Globe33 logo"
+                            style="height: 45px; filter: brightness(0) invert(1);">
+                    </div>
+                    <h4 class="fi-title" style="margin-bottom: 20px;">Follow Us</h4>
+                    <div class="fi-social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="fi-bottom">
+                <p>Copyright © 2024. All rights reserved Global33 Powered by <a href="https://mbwit.net" target="_blank"
+                        rel="noopener noreferrer"
+                        style="color: inherit; text-decoration: none; font-weight: 600;">MBW</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

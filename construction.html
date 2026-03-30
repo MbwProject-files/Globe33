@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civil Construction | Globe33 | Premium Contracting & Property Development</title>
+    <meta name="description"
+        content="Bespoke civil construction solutions from Globe33. Specializing in turn-key projects, general contracting, and property development across Chennai and Bangalore.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assests/img/Global33_logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=11.0">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Editorial Staggered Layout for Construction */
+        .construction-editorial-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        /* Compact Layout - Reduced Padding */
+        .construction-editorial-section {
+            padding: 60px 0;
+            background: #fff;
+        }
+
+        .editorial-mosaic-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        /* Image Mosaic Container */
+        .mosaic-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            position: relative;
+        }
+
+        .mosaic-item {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .mosaic-item.tall {
+            grid-row: span 2;
+            height: 620px;
+        }
+
+        /* Content Area */
+        .ed-content-v3 {
+            position: relative;
+        }
+
+        .chapter-marker {
+            position: absolute;
+            top: -60px;
+            left: -30px;
+            font-size: 140px;
+            font-weight: 800;
+            color: rgba(0, 0, 0, 0.03);
+            z-index: -1;
+            font-family: var(--font-body);
+        }
+
+        .ed-title-v3 {
+            font-size: 44px;
+            line-height: 1;
+            margin-bottom: 25px;
+            color: var(--primary);
+            font-family: var(--font-heading);
+        }
+
+        .ed-lead-v3 {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            color: var(--text-main);
+            opacity: 0.9;
+        }
+
+        .services-list-v3 {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2px;
+        }
+
+        .service-item-v3 {
+            padding: 12px 0;
+            border-bottom: 1px solid #f2f2f2;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .service-item-v3 i {
+            color: var(--accent);
+            font-size: 10px;
+        }
+
+        /* Specialized Process Section */
+        .process-section {
+            background: var(--secondary);
+            padding: 60px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .process-step-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .process-step {
+            text-align: left;
+            padding: 30px;
+            background: #fff;
+            border-bottom: 4px solid var(--accent);
+            transition: transform 0.4s ease;
+        }
+
+        .process-step:hover {
+            transform: translateY(-10px);
+        }
+
+        .step-number {
+            font-size: 50px;
+            font-weight: 700;
+            color: rgba(0,0,0,0.05);
+            margin-bottom: -20px;
+            display: block;
+        }
+
+        /* Core Sectors Grid */
+        .sectors-section {
+            background: #fff;
+            padding: 60px 0;
+        }
+
+        .sector-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .sector-card {
+            border: 1px solid #f0f0f0;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .sector-card:hover {
+            border-color: var(--accent);
+            background: var(--secondary);
+        }
+
+        .sector-card i {
+            font-size: 24px;
+            color: var(--accent);
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .sector-card h4 {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+        }
+
+        @media (max-width: 1024px) {
+            .editorial-grid { grid-template-columns: 1fr; gap: 60px; }
+            .image-stack-v2 { height: 400px; }
+            .img-stack-main { width: 100%; height: 350px; }
+            .img-stack-sub { display: none; }
+            .process-step-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+
+<body class="construction-page">
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <header id="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <img src="assests/img/Global33_logo.png" alt="Globe33 Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="index.html#about">About <i class="fa-solid fa-chevron-down"
+                            style="font-size: 10px; margin-left: 5px;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="firm.html">Firm</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="index.html#services">Services <i class="fa-solid fa-chevron-down"
+                            style="font-size: 10px; margin-left: 5px;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="architecture.html">Architecture</a></li>
+                        <li><a href="interiors.html">Interiors</a></li>
+                        <li><a href="construction.html">Construction</a></li>
+                        <li><a href="industrial-design.html">Industrial Design</a></li>
+                        <li><a href="statutory-process.html">Statutory Process</a></li>
+                        <li><a href="index.html#bim-modelling">BIM Modelling</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#careers">Career</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Banner -->
+        <section class="inner-banner">
+            <img src="assests/img/construction_banner.png" alt="Construction Banner" class="inner-banner-img">
+            <div class="inner-banner-overlay"></div>
+            <div class="inner-banner-content">
+                <span class="eyebrow">Excellence in Execution</span>
+                <h1 style="margin-bottom: 0;">Civil Construction</h1>
+            </div>
+        </section>
+
+        <!-- Section 2: Construction Details (Mosaic Grid Redesign) -->
+        <section class="construction-editorial-section">
+            <div class="container" style="padding: 0 4%; max-width: 100%;">
+                <div class="editorial-mosaic-grid">
+                    <div class="mosaic-container">
+                        <img src="assests/img/construction_site_main.png" alt="Construction Site" class="mosaic-item tall">
+                        <img src="assests/img/construction_materials.png" alt="Materials Detail" class="mosaic-item">
+                        <img src="assests/img/construction_detail.png" alt="Blueprints" class="mosaic-item">
+                    </div>
+
+                    <div class="ed-content-v3">
+                        <span class="chapter-marker">01</span>
+                        <span class="eyebrow eyebrow-arch">Design Philosophy</span>
+                        <h2 class="ed-title-v3">What We Do.</h2>
+                        
+                        <p class="ed-lead-v3">
+                            We have carved a niche for ourselves in the world of Construction with a firm commitment to design aesthetically and visually appealing landmarks in Residential, Commercial, Institutional, Industrial and Infrastructural sectors.
+                        </p>
+                        
+                        <ul class="services-list-v3">
+                            <li class="service-item-v3"><i class="fa-solid fa-angle-right"></i> Turn Key Projects</li>
+                            <li class="service-item-v3"><i class="fa-solid fa-angle-right"></i> General Contracting</li>
+                            <li class="service-item-v3"><i class="fa-solid fa-angle-right"></i> Preparation of bill of quantities (Civil Works)</li>
+                            <li class="service-item-v3"><i class="fa-solid fa-angle-right"></i> Property Development</li>
+                            <li class="service-item-v3"><i class="fa-solid fa-angle-right"></i> Cost Control & Planning</li>
+                            <li class="service-item-v3"><i class="fa-solid fa-angle-right"></i> Project Management Consultation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Pillars of Project Management -->
+        <section class="process-section">
+            <div class="container" style="padding: 0 4%; max-width: 100%;">
+                <div style="text-align: center; margin-bottom: 60px;">
+                    <span class="eyebrow eyebrow-arch">Our Foundation</span>
+                    <h2 style="font-size: 34px;">Technical Excellence</h2>
+                </div>
+                
+                <div class="process-step-grid">
+                    <div class="process-step">
+                        <span class="step-number">01</span>
+                        <h3 style="margin-bottom: 15px;">Strict Timeline</h3>
+                        <p style="font-size: 14px; color: var(--text-muted);">Completing projects on schedule through rigorous project management and logistical innovation.</p>
+                    </div>
+                    <div class="process-step">
+                        <span class="step-number">02</span>
+                        <h3 style="margin-bottom: 15px;">Productive Logic</h3>
+                        <p style="font-size: 14px; color: var(--text-muted);">Optimizing on-site efficiency and material management for sustainable construction growth.</p>
+                    </div>
+                    <div class="process-step">
+                        <span class="step-number">03</span>
+                        <h3 style="margin-bottom: 15px;">Cost-Effective</h3>
+                        <p style="font-size: 14px; color: var(--text-muted);">Smart budgeting and cost control systems that deliver elite quality without excessive overhead.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Core Sectors -->
+        <section class="sectors-section">
+            <div class="container" style="padding: 0 4%; max-width: 100%;">
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <span class="eyebrow eyebrow-arch" style="display: block; letter-spacing: 3px; margin-bottom: 10px;">Specialization</span>
+                    <h2 style="font-size: 34px;">Core Construction Sectors</h2>
+                </div>
+                
+                <div class="sector-grid">
+                    <div class="sector-card">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <h4>Residential</h4>
+                    </div>
+                    <div class="sector-card">
+                        <i class="fa-solid fa-building"></i>
+                        <h4>Commercial</h4>
+                    </div>
+                    <div class="sector-card">
+                        <i class="fa-solid fa-industry"></i>
+                        <h4>Industrial</h4>
+                    </div>
+                    <div class="sector-card">
+                        <i class="fa-solid fa-bridge"></i>
+                        <h4>Infrastructural</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compact Footer CTA -->
+        <section class="section-padding text-center" style="background: var(--primary); color: #fff; padding: 40px 0;">
+            <div class="container">
+                <h3 style="font-size: 28px; margin-bottom: 20px;">Ready to build your landmark?</h3>
+                <a href="index.html#contact" class="btn btn-primary" style="background: var(--white); color: var(--primary); padding: 12px 30px;">Get a Quote</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-inspaire">
+        <div class="container">
+            <div class="fi-grid">
+                <!-- Col 1: Information -->
+                <div class="fi-col">
+                    <h4 class="fi-title">Quick links</h4>
+                    <ul class="fi-links">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#projects">Projects</a></li>
+                        <li><a href="index.html#careers">Career</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 2: Portfolio -->
+                <div class="fi-col">
+                    <h4 class="fi-title">Services</h4>
+                    <ul class="fi-links">
+                        <li><a href="construction.html">Civil Construction</a></li>
+                        <li><a href="architecture.html">Architecture</a></li>
+                        <li><a href="interiors.html">Interior Design</a></li>
+                        <li><a href="#">Property Development</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact Us -->
+                <div class="fi-col">
+                    <h4 class="fi-title">Contact Us</h4>
+                    <div class="fi-contact-list">
+                        <div class="fi-contact-item">
+                            <div class="fi-icon"><i class="fa-solid fa-phone"></i></div>
+                            <a href="tel:+918056137902">+91 80561 37902</a>
+                        </div>
+                        <div class="fi-contact-item">
+                            <div class="fi-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <a href="mailto:info@globe33.in">info@globe33.in</a>
+                        </div>
+                        <div class="fi-contact-item">
+                            <div class="fi-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <span>Kumaraguru Complex, No. 2D-2nd Floor, <br>Velachery Main Road, Chennai - 600
+                                073.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Col 4: Logo & Socials -->
+                <div class="fi-col">
+                    <div class="fi-logo-small" style="margin-bottom: 25px;">
+                        <img src="assests/img/Global33_logo.png" alt="Globe33 logo"
+                            style="height: 45px; filter: brightness(0) invert(1);">
+                    </div>
+                    <h4 class="fi-title" style="margin-bottom: 20px;">Follow Us</h4>
+                    <div class="fi-social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="fi-bottom">
+                <p>Copyright © 2024. All rights reserved Global33 Powered by <a href="https://mbwit.net" target="_blank"
+                        rel="noopener noreferrer"
+                        style="color: inherit; text-decoration: none; font-weight: 600;">MBW</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
