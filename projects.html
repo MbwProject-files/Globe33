@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects | Globe33 | Architectural & Interior Portfolio</title>
+    <meta name="description"
+        content="Explore our portfolio of high-end architectural and interior design projects across residential, commercial, and industrial sectors.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assests/img/Global33_logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=11.0">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .inner-banner {
+            height: 50vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assests/img/Globe_protfolio/Project_1.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 80px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hero-title-v2 {
+            font-size: 3.5rem;
+            color: var(--white);
+            font-weight: 700;
+            letter-spacing: -1px;
+            animation: slideUpFade 1.2s ease;
+        }
+
+        /* Portfolio Grid */
+        .portfolio-grid-section {
+            padding: 40px 0;
+            background: #fff;
+        }
+
+        .portfolio-masonry {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 5px;
+        }
+
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+            aspect-ratio: 4 / 3;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: all 0.5s ease;
+            cursor: pointer;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 60%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 30px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+
+        .portfolio-title {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            transform: translateY(20px);
+            transition: transform 0.5s ease;
+        }
+
+        .portfolio-category {
+            color: var(--accent);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            transform: translateY(20px);
+            transition: transform 0.5s ease 0.1s;
+        }
+
+        .portfolio-item:hover .portfolio-title,
+        .portfolio-item:hover .portfolio-category {
+            transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-masonry {
+                grid-template-columns: 1fr;
+            }
+            .hero-title-v2 { font-size: 2.5rem; }
+        }
+
+        @keyframes slideUpFade {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body class="portfolio-page">
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <header id="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <img src="assests/img/Global33_logo.png" alt="Globe33 Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="index.html#about">About <i class="fa-solid fa-chevron-down"
+                            style="font-size: 10px; margin-left: 5px;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="firm.html">Firm</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="index.html#services">Services <i class="fa-solid fa-chevron-down"
+                            style="font-size: 10px; margin-left: 5px;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="architecture.html">Architecture</a></li>
+                        <li><a href="interiors.html">Interiors</a></li>
+                        <li><a href="construction.html">Construction</a></li>
+                        <li><a href="industrial-design.html">Industrial Design</a></li>
+                        <li><a href="statutory-process.html">Statutory Process</a></li>
+                        <li><a href="bim-modelling.html">BIM Modelling</a></li>
+                    </ul>
+                </li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Banner -->
+        <section class="inner-banner">
+            <div class="inner-banner-content">
+                <span class="eyebrow">Our Portfolio</span>
+                <h1 class="hero-title-v2">Exclusive Projects</h1>
+            </div>
+        </section>
+
+        <!-- Portfolio Masonry Section -->
+        <section class="portfolio-grid-section">
+            <div class="container" style="padding: 0 5%;">
+                <div style="margin-bottom: 60px; text-align: center;">
+                    <span class="eyebrow eyebrow-arch">Crafting Excellence</span>
+                    <h2 style="font-size: 40px; font-weight: 400; letter-spacing: -1px;">A selection of our <span class="arch-accent">masterpieces.</span></h2>
+                </div>
+
+                <div class="portfolio-masonry">
+                    <!-- Project 1 -->
+                    <div class="portfolio-item">
+                        <img src="assests/img/Globe_protfolio/Farooq.png" alt="Farooq Residence">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Residential</span>
+                            <h3 class="portfolio-title">Farooq Residence</h3>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="portfolio-item">
+                        <img src="assests/img/Globe_protfolio/Ganesh Maduravoyal.png" alt="Ganesh Maduravoyal">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Residential</span>
+                            <h3 class="portfolio-title">Ganesh Maduravoyal Residency</h3>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="portfolio-item">
+                        <img src="assests/img/Globe_protfolio/LVS view1.png" alt="LVS View">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Architecture</span>
+                            <h3 class="portfolio-title">LVS View</h3>
+                        </div>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="portfolio-item">
+                        <img src="assests/img/Globe_protfolio/Marriage Hall2.png" alt="Marriage Hall">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Commercial</span>
+                            <h3 class="portfolio-title">Marriage Hall Project</h3>
+                        </div>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="portfolio-item">
+                        <img src="assests/img/Globe_protfolio/Porur.png" alt="Porur Project">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Residential</span>
+                            <h3 class="portfolio-title">Porur Residential Complex</h3>
+                        </div>
+                    </div>
+                    <!-- Project 6 -->
+                    <div class="portfolio-item">
+                        <img src="assests/img/Globe_protfolio/Prabhu Jewellers.png" alt="Prabhu Jewellers">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Commercial Interior</span>
+                            <h3 class="portfolio-title">Prabhu Jewellers</h3>
+                        </div>
+                    </div>
+                    <!-- Project 7 -->
+                    <div class="portfolio-item">
+                        <img src="assests/img/Globe_protfolio/Project_1.png" alt="Modern Villa">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Architecture</span>
+                            <h3 class="portfolio-title">Modern Villa 01</h3>
+                        </div>
+                    </div>
+                    <!-- Project 8 -->
+                    <div class="portfolio-item">
+                        <img src="assests/img/Globe_protfolio/Project_2.png" alt="Luxe Suite">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Interior Design</span>
+                            <h3 class="portfolio-title">Residential Suite 02</h3>
+                        </div>
+                    </div>
+                    <!-- Project 9 -->
+                    <div class="portfolio-item">
+                        <img src="assests/img/Globe_protfolio/Project_3.png" alt="Contemporary Office">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Commercial Design</span>
+                            <h3 class="portfolio-title">Contemporary Design 03</h3>
+                        </div>
+                    </div>
+                    <!-- Project 10 -->
+                    <div class="portfolio-item">
+                        <img src="assests/img/Globe_protfolio/Sasi Option final 1 Abode rendered.png" alt="Sasi Abode">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Luxury Living</span>
+                            <h3 class="portfolio-title">Sasi Abode</h3>
+                        </div>
+                    </div>
+                    <!-- Project 11 -->
+                    <div class="portfolio-item">
+                        <img src="assests/img/Globe_protfolio/Shara swapna.png" alt="Shara Swapna">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Residential</span>
+                            <h3 class="portfolio-title">Shara Swapna Residence</h3>
+                        </div>
+                    </div>
+                    <!-- Project 12 -->
+                    <div class="portfolio-item">
+                        <img src="assests/img/Globe_protfolio/Suresh view.png" alt="Suresh View">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Modern Architecture</span>
+                            <h3 class="portfolio-title">Suresh Residency</h3>
+                        </div>
+                    </div>
+                    <!-- Project 13 -->
+                    <div class="portfolio-item">
+                        <img src="assests/img/Globe_protfolio/selayur.png" alt="Selayur Project">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Residential</span>
+                            <h3 class="portfolio-title">Selayur Project</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="section-padding text-center" style="background: var(--primary); color: #fff; padding: 60px 0;">
+            <div class="container">
+                <h2 style="font-size: 48px; margin-bottom: 20px;">Transform your vision <br>into reality.</h2>
+                <p style="margin-bottom: 40px; opacity: 0.8;">Collaborate with us to create spaces that inspire.</p>
+                <a href="index.html#contact" class="btn btn-primary" style="background: var(--white); color: var(--primary); padding: 15px 40px;">Request a Quote</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-inspaire">
+        <div class="container">
+            <div class="fi-grid">
+                <!-- Col 1: Information -->
+                <div class="fi-col">
+                    <h4 class="fi-title">Quick links</h4>
+                    <ul class="fi-links">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="career.html">Career</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 2: Services -->
+                <div class="fi-col">
+                    <h4 class="fi-title">Services</h4>
+                    <ul class="fi-links">
+                        <li><a href="architecture.html">Architecture</a></li>
+                        <li><a href="interiors.html">Interiors</a></li>
+                        <li><a href="construction.html">Construction</a></li>
+                        <li><a href="industrial-design.html">Industrial Design</a></li>
+                        <li><a href="statutory-process.html">Statutory Process</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact Us -->
+                <div class="fi-col">
+                    <h4 class="fi-title">Contact Us</h4>
+                    <div class="fi-contact-list">
+                        <div class="fi-contact-item">
+                            <div class="fi-icon"><i class="fa-solid fa-phone"></i></div>
+                            <a href="tel:+918056137902">+91 80561 37902</a>
+                        </div>
+                        <div class="fi-contact-item">
+                            <div class="fi-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <a href="mailto:info@globe33.in">info@globe33.in</a>
+                        </div>
+                        <div class="fi-contact-item">
+                            <div class="fi-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <span>Kumaraguru Complex, No. 2D-2nd Floor, <br>Velachery Main Road, Chennai - 600
+                                073.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Col 4: Logo & Socials -->
+                <div class="fi-col">
+                    <div class="fi-logo-small" style="margin-bottom: 25px;">
+                        <img src="assests/img/Global33_logo.png" alt="Globe33 logo"
+                            style="height: 45px; filter: brightness(0) invert(1);">
+                    </div>
+                    <h4 class="fi-title" style="margin-bottom: 20px;">Follow Us</h4>
+                    <div class="fi-social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="fi-bottom">
+                <p>Copyright © 2024. All rights reserved Global33 Powered by <a href="https://mbwit.net" target="_blank"
+                        rel="noopener noreferrer"
+                        style="color: inherit; text-decoration: none; font-weight: 600;">MBW</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

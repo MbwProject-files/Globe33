@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interior Design | Globe33 | Bespoke Luxury Interiors</title>
+    <title>BIM Modelling | Globe33 | Bespoke Interior Design</title>
     <meta name="description"
-        content="Creative and intelligent interior design solutions. From modular kitchens to lighting and flooring, we satisfy aesthetic and functional needs.">
+        content="Our BIM Modelling services provide high-precision 3D digital representations of buildings, enhancing collaboration and reducing errors throughout the construction lifecycle.">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assests/img/Global33_logo.png">
 
@@ -21,149 +21,183 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-        /* Premium Layout Refinement */
-        .interior-editorial-section {
-            padding: 60px 0;
-            background: #fff;
+        .inner-banner {
+            height: 60vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 80px;
+            overflow: hidden;
+            position: relative;
         }
 
-        /* Premium Redesigned What We Do Section */
-        .interior-editorial-section {
-            padding: 80px 0;
+        .hero-title-v2 {
+            font-size: 3rem;
+            color: var(--white);
+            font-weight: 700;
+            letter-spacing: -1px;
+            animation: slideUpFade 1.2s ease;
+        }
+
+        .sec-label {
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 11px;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        /* Information Section - Editorial Design */
+        .editorial-section {
+            padding: 60px 0;
             background: #fff;
         }
 
         .editorial-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 100px;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 80px;
             align-items: center;
         }
 
-        .ed-content-v2 {
-            border-left: 2px solid var(--accent);
-            padding-left: 40px;
+        .ed-content {
+            padding-right: 40px;
         }
 
-        .ed-title-v2 {
-            font-size: 38px;
+        .ed-title {
+            font-size: 42px;
             line-height: 1.1;
-            margin-bottom: 25px;
-            font-family: var(--font-heading);
+            margin-bottom: 30px;
             color: var(--primary);
         }
 
-        .ed-lead-v2 {
-            font-size: 1.15rem;
-            line-height: 1.8;
+        .ed-lead {
+            font-size: 20px;
+            line-height: 1.6;
+            color: var(--text-muted);
             margin-bottom: 40px;
-            color: var(--primary);
         }
 
-        .ed-lead-v2::first-letter {
-            font-size: 70px;
+        .ed-lead::first-letter {
+            font-size: 80px;
             float: left;
             line-height: 0.8;
             margin-right: 15px;
-            font-weight: 400;
+            font-weight: 700;
             color: var(--primary);
-            font-family: var(--font-heading);
         }
 
-        .services-list-v2 {
-            list-style: none;
+        .ed-points-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            border-top: 1px solid #eee;
+            padding-top: 30px;
         }
 
-        .service-item-v2 {
-            padding: 15px 0;
-            border-bottom: 1px solid #f0f0f0;
+        .ed-point {
             display: flex;
             align-items: center;
             gap: 15px;
-            font-size: 14px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--primary);
         }
 
-        .service-item-v2 i {
+        .ed-point i {
             color: var(--accent);
-            font-size: 12px;
+            font-size: 14px;
         }
 
-        /* Staggered Image Layout */
-        .image-stack-v2 {
+        /* Image Stack Effect */
+        .image-stack {
             position: relative;
-            height: 600px;
+            padding-bottom: 50px;
         }
 
-        .img-stack-main {
-            width: 85%;
-            height: 500px;
-            object-fit: cover;
-            box-shadow: 20px 20px 60px rgba(0,0,0,0.1);
+        .img-main {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 2;
         }
 
-        .img-stack-sub {
+        .img-sub {
+            width: 60%;
             position: absolute;
-            bottom: 0px;
-            right: 0px;
-            width: 50%;
-            height: 300px;
-            object-fit: cover;
-            border: 10px solid #fff;
-            box-shadow: 0 40px 80px rgba(0,0,0,0.15);
+            bottom: -30px;
+            right: -30px;
+            z-index: 3;
+            border: 10px solid var(--white);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            border-radius: 4px;
         }
 
-        /* Specialized Interior Services */
-        .interior-services-section {
+        /* Capabilities / Portfolio Section */
+        .capabilities-section {
             background: var(--secondary);
             padding: 60px 0;
         }
 
-        .int-service-grid {
+        .cap-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 30px;
         }
 
-        .int-service-card {
+        .cap-card {
             background: var(--white);
-            padding: 35px;
-            border: 1px solid transparent;
+            padding: 40px;
+            border-radius: 4px;
             transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
 
-        .int-service-card:hover {
+        .cap-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 40px rgba(0,0,0,0.05);
-            border-color: var(--accent);
         }
 
-        .int-service-card i {
+        .cap-card i {
             font-size: 32px;
             color: var(--accent);
         }
 
-        .int-service-card h3 {
+        .cap-card h3 {
             font-size: 20px;
             color: var(--primary);
         }
 
-        .int-service-card p {
+        .cap-card p {
             color: var(--text-muted);
             font-size: 14px;
             line-height: 1.6;
         }
 
         @media (max-width: 1024px) {
+            .hero-title-v2 { font-size: 3.5rem; }
             .editorial-grid { grid-template-columns: 1fr; gap: 60px; }
-            .int-service-grid { grid-template-columns: 1fr; }
+            .cap-grid { grid-template-columns: 1fr; }
+        }
+
+        @keyframes slideUpFade {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 
-<body class="interiors-page">
+<body class="architecture-page-v2">
     <div class="cursor-dot"></div>
     <div class="cursor-outline"></div>
 
@@ -188,8 +222,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="architecture.html">Architecture</a></li>
                         <li><a href="interiors.html">Interiors</a></li>
-                                                <li><a href="construction.html">Construction</a></li>
-
+                        <li><a href="construction.html">Construction</a></li>
                         <li><a href="industrial-design.html">Industrial Design</a></li>
                         <li><a href="statutory-process.html">Statutory Process</a></li>
                         <li><a href="bim-modelling.html">BIM Modelling</a></li>
@@ -203,69 +236,66 @@
     </header>
 
     <main>
-        <!-- Section 1: Banner -->
+        <!-- Section 1: Immersive Hero Banner -->
         <section class="inner-banner">
-            <img src="assests/img/interiors_banner.png" alt="Interior Design Banner" class="inner-banner-img">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1600" alt="BIM Modelling Banner" class="inner-banner-img">
             <div class="inner-banner-overlay"></div>
             <div class="inner-banner-content">
-                <span class="eyebrow">Luxury Spaces</span>
-                <h1 style="margin-bottom: 0;">Interior Design</h1>
+                <span class="eyebrow">Digital Excellence</span>
+                <h1 class="hero-title-v2" style="margin-bottom: 0;">BIM Modelling</h1>
             </div>
         </section>
 
-        <!-- Section 2: Interior Details (Premium Redesign) -->
-        <section class="interior-editorial-section">
+        <!-- Section 2: BIM Modelling Details -->
+        <section class="editorial-section">
             <div class="container" style="padding: 0 5%; max-width: 100%;">
                 <div class="editorial-grid">
-                    <div class="image-stack-v2">
-                        <img src="assests/img/interiors_detail.png" alt="Interior Setting" class="img-stack-main">
-                        <img src="assests/img/interiors_mood.png" alt="Design Materials" class="img-stack-sub">
-                    </div>
-
-                    <div class="ed-content-v2">
-                        <span class="eyebrow eyebrow-arch">Design Philosophy</span>
-                        <h2 class="ed-title-v2">What We Do.</h2>
-                        <h3 style="font-size: 24px; margin-bottom: 20px; font-style: italic; opacity: 0.7;">Bespoke Interior Design</h3>
+                    <div class="ed-content">
+                        <span class="sec-label">Our Expertise</span>
+                        <h2 class="ed-title">Building Information <br><span class="arch-accent">Modelling Solutions.</span></h2>
                         
-                        <p class="ed-lead-v2">
-                            We offer creative and intelligent solutions to your requirements. We know how to listen and infuse your organization's personality into a space. We conceive spaces that satisfy the client's needs for aesthetics, safety and function.
+                        <p class="ed-lead">
+                            BIM (Building Information Modelling) is a transformative process that allows us to create intelligent 3D models to better plan, design, construct, and manage buildings and infrastructure. Our BIM services go beyond simple 3D modeling to incorporate key data for the entire project lifecycle.
                         </p>
                         
-                        <ul class="services-list-v2">
-                            <li class="service-item-v2"><i class="fa-solid fa-square"></i> Implementing Design ideas</li>
-                            <li class="service-item-v2"><i class="fa-solid fa-square"></i> Modular Kitchen & Contemporary Wardrobes</li>
-                            <li class="service-item-v2"><i class="fa-solid fa-square"></i> Lighting & Flooring</li>
-                            <li class="service-item-v2"><i class="fa-solid fa-square"></i> Civil works and Electrical Works</li>
-                            <li class="service-item-v2"><i class="fa-solid fa-square"></i> False Ceiling, Wall Design and Painting</li>
-                        </ul>
+                        <div class="ed-points-list">
+                            <div class="ed-point"><i class="fa-solid fa-angle-right"></i> Detailed 3D Modeling (LOD 100 to LOD 500)</div>
+                            <div class="ed-point"><i class="fa-solid fa-angle-right"></i> Clash Detection & Inter-disciplinary Coordination</div>
+                            <div class="ed-point"><i class="fa-solid fa-angle-right"></i> Quantity Take-offs & Precise Estimation</div>
+                            <div class="ed-point"><i class="fa-solid fa-angle-right"></i> 4D Scheduling & Construction Simulation</div>
+                            <div class="ed-point"><i class="fa-solid fa-angle-right"></i> Digital Twin for Asset Management</div>
+                        </div>
+                    </div>
+                    
+                    <div class="image-stack">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" alt="3D Model Visualization" class="img-main">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=600" alt="Technical BIM View" class="img-sub">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section 3: Specialized Interior Services -->
-        <section class="interior-services-section">
+        <!-- Section 3: Professional Capabilities -->
+        <section class="capabilities-section">
             <div class="container" style="padding: 0 5%; max-width: 100%;">
-                <div style="text-align: center; margin-bottom: 50px;">
-                    <span class="eyebrow eyebrow-arch">Our Expertise</span>
-                    <h2 style="font-size: 34px;">Bespoke Solutions</h2>
-                </div>
+                <span class="sec-label text-center">Core Pillars</span>
+                <h2 style="font-size: 34px; text-align: center; margin-bottom: 50px;">BIM Capabilities</h2>
                 
-                <div class="int-service-grid">
-                    <div class="int-service-card">
-                        <i class="fa-solid fa-kitchen-set"></i>
-                        <h3>Modular Kitchens</h3>
-                        <p>Contemporary, high-functioning kitchen systems designed for ergonomics and luxury aesthetics.</p>
+                <div class="cap-grid">
+                    <div class="cap-card">
+                        <i class="fa-solid fa-cube"></i>
+                        <h3>Precision Modeling</h3>
+                        <p>Creating highly accurate digital assets that reflect every architectural and structural detail with millimeter precision.</p>
                     </div>
-                    <div class="int-service-card">
-                        <i class="fa-solid fa-couch"></i>
-                        <h3>Living Spaces</h3>
-                        <p>Infusing personality into your social zones with curated furniture and harmonious layouts.</p>
+                    <div class="cap-card">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h3>Conflict Resolution</h3>
+                        <p>Identifying and resolving clashes before construction begins, saving time and significant costs during the build phase.</p>
                     </div>
-                    <div class="int-service-card">
-                        <i class="fa-solid fa-lightbulb"></i>
-                        <h3>Lighting Design</h3>
-                        <p>Setting the mood with intelligent lighting layers that enhance both function and architectural beauty.</p>
+                    <div class="cap-card">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <h3>Data Integration</h3>
+                        <p>Embedding vital information into components for seamless procurement, scheduling, and long-term facility management.</p>
                     </div>
                 </div>
             </div>
@@ -274,7 +304,7 @@
         <!-- Compact Footer CTA -->
         <section class="section-padding text-center" style="background: var(--primary); color: #fff; padding: 40px 0;">
             <div class="container">
-                <h3 style="font-size: 28px; margin-bottom: 20px;">Ready to transform your space?</h3>
+                <h3 style="font-size: 28px; margin-bottom: 20px;">Transform your project with BIM precision.</h3>
                 <a href="index.html#contact" class="btn btn-primary" style="background: var(--white); color: var(--primary); padding: 12px 30px;">Request Consultation</a>
             </div>
         </section>
@@ -301,10 +331,11 @@
                 <div class="fi-col">
                     <h4 class="fi-title">Services</h4>
                     <ul class="fi-links">
-                        <li><a href="interiors.html">Interior Design</a></li>
                         <li><a href="architecture.html">Architecture</a></li>
-                        <li><a href="#">Commercial Design</a></li>
-                        <li><a href="#">Premium Repair</a></li>
+                        <li><a href="interiors.html">Interiors</a></li>
+                        <li><a href="construction.html">Construction</a></li>
+                        <li><a href="industrial-design.html">Industrial Design</a></li>
+                        <li><a href="statutory-process.html">Statutory Process</a></li>
                     </ul>
                 </div>
 

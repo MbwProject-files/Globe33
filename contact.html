@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Globe33 | Architectural & Interior Design Chennai</title>
+    <meta name="description"
+        content="Get in touch with Globe33. Based in Chennai, we provide world-class architectural and interior design services. Let's discuss your next project.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assests/img/Global33_logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=11.0">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .inner-banner {
+            height: 50vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&q=80&w=1600');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 80px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hero-title-v2 {
+            font-size: 3.5rem;
+            color: var(--white);
+            font-weight: 700;
+            letter-spacing: -1px;
+            animation: slideUpFade 1.2s ease;
+        }
+
+        /* Contact Content Section */
+        .contact-page-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 80px;
+        }
+
+        .contact-info-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .contact-method {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .contact-method-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--secondary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .contact-method-text h4 {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .contact-method-text p, .contact-method-text a {
+            font-size: 1.1rem;
+            color: var(--primary);
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        /* Modern Contact Form */
+        .contact-form-box {
+            background: var(--secondary);
+            padding: 60px;
+            border-radius: 4px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.05);
+        }
+
+        .c-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .c-form-full {
+            grid-column: 1 / span 2;
+        }
+
+        .c-form label {
+            display: block;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary);
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .c-form input, .c-form textarea, .c-form select {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            background: #fff;
+            color: var(--primary);
+            font-family: var(--font-body);
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+
+        .c-form input:focus, .c-form textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 5px 15px rgba(0, 96, 139, 0.05);
+        }
+
+        /* Map Section */
+        .map-section {
+            height: 450px;
+            background: #eee;
+            position: relative;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 992px) {
+            .contact-grid { grid-template-columns: 1fr; gap: 60px; }
+            .hero-title-v2 { font-size: 2.5rem; }
+            .contact-form-box { padding: 40px 25px; }
+        }
+
+        @keyframes slideUpFade {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body class="contact-page">
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <header id="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <img src="assests/img/Global33_logo.png" alt="Globe33 Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="index.html#about">About <i class="fa-solid fa-chevron-down"
+                            style="font-size: 10px; margin-left: 5px;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="firm.html">Firm</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="index.html#services">Services <i class="fa-solid fa-chevron-down"
+                            style="font-size: 10px; margin-left: 5px;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="architecture.html">Architecture</a></li>
+                        <li><a href="interiors.html">Interiors</a></li>
+                        <li><a href="construction.html">Construction</a></li>
+                        <li><a href="industrial-design.html">Industrial Design</a></li>
+                        <li><a href="statutory-process.html">Statutory Process</a></li>
+                        <li><a href="bim-modelling.html">BIM Modelling</a></li>
+                    </ul>
+                </li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Banner -->
+        <section class="inner-banner">
+            <div class="inner-banner-content text-center">
+                <span class="eyebrow" style="color: var(--white); opacity: 0.8;">Get in Touch</span>
+                <h1 class="hero-title-v2">Let's start your project.</h1>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-page-section">
+            <div class="container" style="padding: 0 5%; max-width: 100%;">
+                <div class="contact-grid">
+                    <!-- Left: Info -->
+                    <div class="contact-info-panel">
+                        <div>
+                            <span class="eyebrow eyebrow-arch">Contact Information</span>
+                            <h2 style="font-size: 42px; line-height: 1.1; margin-bottom: 30px;">Reach out to our <br><span class="arch-accent">Chennai studio.</span></h2>
+                            <p style="color: var(--text-muted); line-height: 1.8;">Our experts are available to discuss your architectural and interior design requirements. Whether it's a new build or a renovation, we are here to help.</p>
+                        </div>
+
+                        <div class="contact-methods-list">
+                            <!-- Address -->
+                            <div class="contact-method">
+                                <div class="contact-method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="contact-method-text">
+                                    <h4>Visit Us</h4>
+                                    <p>Kumaraguru Complex, No. 2D-2nd Floor, <br>Velachery Main Road, Chennai - 600 073.</p>
+                                </div>
+                            </div>
+                            <br><br>
+                            <!-- Phone -->
+                            <div class="contact-method">
+                                <div class="contact-method-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="contact-method-text">
+                                    <h4>Call Us</h4>
+                                    <a href="tel:+918056137902">+91 80561 37902</a>
+                                </div>
+                            </div>
+                            <br><br>
+                            <!-- Email -->
+                            <div class="contact-method">
+                                <div class="contact-method-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="contact-method-text">
+                                    <h4>Email Us</h4>
+                                    <a href="mailto:info@globe33.in">info@globe33.in</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 style="font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted); margin-bottom: 20px;">Follow Us</h4>
+                            <div class="social-links" style="display: flex; gap: 15px;">
+                                <a href="#" style="width: 40px; height: 40px; border: 1px solid #ddd; display: flex; align-items: center; justify-content: center; border-radius: 50%; color: var(--primary);"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" style="width: 40px; height: 40px; border: 1px solid #ddd; display: flex; align-items: center; justify-content: center; border-radius: 50%; color: var(--primary);"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#" style="width: 40px; height: 40px; border: 1px solid #ddd; display: flex; align-items: center; justify-content: center; border-radius: 50%; color: var(--primary);"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Form -->
+                    <div class="contact-form-box">
+                        <form class="c-form">
+                            <div class="form-group">
+                                <label>Your Name</label>
+                                <input type="text" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" placeholder="email@address.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="tel" placeholder="+91 00000 00000">
+                            </div>
+                            <div class="form-group">
+                                <label>Subject</label>
+                                <select>
+                                    <option value="architecture">Architecture Project</option>
+                                    <option value="interiors">Interior Design</option>
+                                    <option value="consultation">General Consultation</option>
+                                    <option value="other">Other Inquiry</option>
+                                </select>
+                            </div>
+                            <div class="c-form-full">
+                                <label>Your Message</label>
+                                <textarea rows="6" placeholder="Tell us more about your project goals..." required></textarea>
+                            </div>
+                            <div class="c-form-full" style="margin-top: 10px;">
+                                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 20px;">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.356195726359!2d80.1989047750761!3d12.946124487366627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d88665ca81d%3A0x6b7722765870020d!2sVelachery%20Main%20Rd%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1711786543210!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <footer class="footer-inspaire">
+        <div class="container">
+            <div class="fi-grid">
+                <!-- Col 1: Information -->
+                <div class="fi-col">
+                    <h4 class="fi-title">Quick links</h4>
+                    <ul class="fi-links">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="career.html">Career</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 2: Services -->
+                <div class="fi-col">
+                    <h4 class="fi-title">Services</h4>
+                    <ul class="fi-links">
+                        <li><a href="architecture.html">Architecture</a></li>
+                        <li><a href="interiors.html">Interiors</a></li>
+                        <li><a href="construction.html">Construction</a></li>
+                        <li><a href="industrial-design.html">Industrial Design</a></li>
+                        <li><a href="statutory-process.html">Statutory Process</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact Us -->
+                <div class="fi-col">
+                    <h4 class="fi-title">Contact Us</h4>
+                    <div class="fi-contact-list">
+                        <div class="fi-contact-item">
+                            <div class="fi-icon"><i class="fa-solid fa-phone"></i></div>
+                            <a href="tel:+918056137902">+91 80561 37902</a>
+                        </div>
+                        <div class="fi-contact-item">
+                            <div class="fi-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <a href="mailto:info@globe33.in">info@globe33.in</a>
+                        </div>
+                        <div class="fi-contact-item">
+                            <div class="fi-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <span>Kumaraguru Complex, No. 2D-2nd Floor, <br>Velachery Main Road, Chennai - 600
+                                073.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Col 4: Logo & Socials -->
+                <div class="fi-col">
+                    <div class="fi-logo-small" style="margin-bottom: 25px;">
+                        <img src="assests/img/Global33_logo.png" alt="Globe33 logo"
+                            style="height: 45px; filter: brightness(0) invert(1);">
+                    </div>
+                    <h4 class="fi-title" style="margin-bottom: 20px;">Follow Us</h4>
+                    <div class="fi-social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="fi-bottom">
+                <p>Copyright © 2024. All rights reserved Global33 Powered by <a href="https://mbwit.net" target="_blank"
+                        rel="noopener noreferrer"
+                        style="color: inherit; text-decoration: none; font-weight: 600;">MBW</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

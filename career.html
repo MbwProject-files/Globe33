@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | Globe33 | Join Our Design Visionaries</title>
+    <meta name="description"
+        content="Join the Globe33 team. We are looking for talented architects, interior designers, and creative minds to help us build extraordinary spaces.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assests/img/Global33_logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=11.0">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .inner-banner {
+            height: 50vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1600');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 80px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hero-title-v2 {
+            font-size: 3.5rem;
+            color: var(--white);
+            font-weight: 700;
+            letter-spacing: -1px;
+            animation: slideUpFade 1.2s ease;
+        }
+
+        /* Careers Content Section */
+        .careers-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .culture-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+
+        .culture-content h2 {
+            font-size: 42px;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            color: var(--primary);
+        }
+
+        .culture-content p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        /* Positions Section */
+        .positions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .position-card {
+            background: var(--secondary);
+            padding: 40px;
+            border-radius: 4px;
+            transition: all 0.4s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border: 1px solid transparent;
+        }
+
+        .position-card:hover {
+            background: var(--white);
+            border-color: var(--accent);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+        }
+
+        .position-badge {
+            display: inline-block;
+            padding: 5px 12px;
+            background: rgba(0, 96, 139, 0.1);
+            color: var(--accent);
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            width: fit-content;
+        }
+
+        .position-card h3 {
+            font-size: 22px;
+            color: var(--primary);
+        }
+
+        .position-info {
+            font-size: 13px;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        /* Form Overlay */
+        .application-form-section {
+            background: var(--primary);
+            color: #fff;
+            padding: 80px 0;
+        }
+
+        .apply-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .career-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 50px;
+        }
+
+        .form-group-full {
+            grid-column: 1 / span 2;
+        }
+
+        .career-form label {
+            display: block;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+            color: var(--text-muted);
+            font-weight: 700;
+        }
+
+        .career-form input, 
+        .career-form select, 
+        .career-form textarea {
+            width: 100%;
+            padding: 12px 15px;
+            background: #fff;
+            border: 1px solid #ddd;
+            color: var(--primary);
+            font-family: var(--font-body);
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+
+        .career-form input:focus, 
+        .career-form select:focus, 
+        .career-form textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 5px 15px rgba(0, 96, 139, 0.05);
+        }
+
+        .culture-form-container {
+            background: var(--secondary);
+            padding: 40px;
+            border-radius: 4px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+        }
+
+        .career-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .culture-grid, .career-form {
+                grid-template-columns: 1fr;
+            }
+            .form-group-full { grid-column: 1; }
+            .hero-title-v2 { font-size: 2.5rem; }
+        }
+
+        @keyframes slideUpFade {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body class="career-page">
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <header id="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <img src="assests/img/Global33_logo.png" alt="Globe33 Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="index.html#about">About <i class="fa-solid fa-chevron-down"
+                            style="font-size: 10px; margin-left: 5px;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="firm.html">Firm</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="index.html#services">Services <i class="fa-solid fa-chevron-down"
+                            style="font-size: 10px; margin-left: 5px;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="architecture.html">Architecture</a></li>
+                        <li><a href="interiors.html">Interiors</a></li>
+                        <li><a href="construction.html">Construction</a></li>
+                        <li><a href="industrial-design.html">Industrial Design</a></li>
+                        <li><a href="statutory-process.html">Statutory Process</a></li>
+                        <li><a href="bim-modelling.html">BIM Modelling</a></li>
+                    </ul>
+                </li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Banner -->
+        <section class="inner-banner">
+            <div class="inner-banner-content">
+                <span class="eyebrow">Working at Globe33</span>
+                <h1 class="hero-title-v2">Build the Extraordinary</h1>
+            </div>
+        </section>
+
+        <!-- Our Space Section -->
+        <section style="padding: 100px 0; background: var(--secondary);">
+            <div class="container" style="padding: 0 5%; max-width: 100%;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 80px; align-items: center;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=600" alt="Studio Space 1" style="width: 100%; border-radius: 4px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=600" alt="Studio Space 2" style="width: 100%; border-radius: 4px; margin-top: 40px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                    </div>
+                    <div>
+                        <span class="eyebrow" style="color: var(--accent); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; font-size: 11px;">Our Inspiring Space</span>
+                        <h2 style="font-size: 42px; line-height: 1.1; margin: 20px 0 25px; color: var(--primary);">An environment where <br><span class="arch-accent">Creativity Flourishes.</span></h2>
+                        <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 30px; font-size: 1.05rem;">Our studio in Chennai is designed to be as inspiring as the architecture we create. With an open-plan layout, dedicated collaboration zones, and the latest design technology, we provide everything you need to push the boundaries of design.</p>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div style="display: flex; align-items: center; gap: 15px;">
+                                <div style="width: 35px; height: 35px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                                    <i class="fa-solid fa-check" style="color: var(--accent); font-size: 12px;"></i>
+                                </div>
+                                <span style="font-size: 14px; font-weight: 600; color: var(--primary);">Open workspace</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 15px;">
+                                <div style="width: 35px; height: 35px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                                    <i class="fa-solid fa-check" style="color: var(--accent); font-size: 12px;"></i>
+                                </div>
+                                <span style="font-size: 14px; font-weight: 600; color: var(--primary);">Modern BIM Lab</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 15px;">
+                                <div style="width: 35px; height: 35px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                                    <i class="fa-solid fa-check" style="color: var(--accent); font-size: 12px;"></i>
+                                </div>
+                                <span style="font-size: 14px; font-weight: 600; color: var(--primary);">Idea Hubs</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 15px;">
+                                <div style="width: 35px; height: 35px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                                    <i class="fa-solid fa-check" style="color: var(--accent); font-size: 12px;"></i>
+                                </div>
+                                <span style="font-size: 14px; font-weight: 600; color: var(--primary);">Artisan Library</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Culture Section -->
+        <section class="careers-section">
+            <div class="container" style="padding: 0 5%; max-width: 100%;">
+                <div class="culture-grid">
+                    <div class="culture-content">
+                        <span class="eyebrow eyebrow-arch">Join Our Practice</span>
+                        <h2>Empowerment Through <br><span class="arch-accent">Design Excellence.</span></h2>
+                        <p>At Globe33, we don't just design buildings; we shape experiences. Our team is a collection of visionaries, problem solvers, and artists committed to pushing the boundaries of what's possible in architecture and interior design.</p>
+                        <p>We foster a collaborative environment where every idea is heard, and creativity flows freely from interns to principals. If you are passionate about high-end residential and commercial projects, we want to hear from you.</p>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 50px;">
+                            <div style="padding: 40px; border: 1px solid #f0f0f0; position: relative; overflow: hidden; background: #fff;">
+                                <i class="fa-solid fa-lightbulb" style="position: absolute; right: -10px; bottom: -10px; font-size: 100px; color: rgba(0, 96, 139, 0.04);"></i>
+                                <h4 style="font-size: 12px; text-transform: uppercase; letter-spacing: 3px; color: var(--accent); margin-bottom: 20px; font-weight: 800; display: flex; align-items: center; gap: 10px;">
+                                    <span style="width: 20px; height: 1px; background: var(--accent);"></span> Innovation
+                                </h4>
+                                <p style="font-size: 14px; color: var(--text-muted); line-height: 1.8; position: relative; z-index: 1; margin: 0;">Always learning, always evolving. We embrace the latest architectural technologies to deliver forward-thinking solutions.</p>
+                            </div>
+                            <div style="padding: 40px; border: 1px solid #f0f0f0; position: relative; overflow: hidden; background: #fff;">
+                                <i class="fa-solid fa-gem" style="position: absolute; right: -10px; bottom: -10px; font-size: 100px; color: rgba(0, 96, 139, 0.04);"></i>
+                                <h4 style="font-size: 12px; text-transform: uppercase; letter-spacing: 3px; color: var(--accent); margin-bottom: 20px; font-weight: 800; display: flex; align-items: center; gap: 10px;">
+                                    <span style="width: 20px; height: 1px; background: var(--accent);"></span> Quality
+                                </h4>
+                                <p style="font-size: 14px; color: var(--text-muted); line-height: 1.8; position: relative; z-index: 1; margin: 0;">Precision in every detail. Our commitment to high-standard craftsmanship defines the legacy of every structure we build.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="culture-form-container">
+                        <div style="margin-bottom: 30px;">
+                            <h3 style="font-size: 24px; margin-bottom: 10px;">Apply Now</h3>
+                            <p style="font-size: 14px; color: var(--text-muted); margin: 0;">Fill out the form below and we'll be in touch.</p>
+                        </div>
+                        <form class="career-form">
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Contact Number</label>
+                                <input type="tel" placeholder="+91 00000 00000" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Position</label>
+                                <select required>
+                                    <option value="">Select position</option>
+                                    <option value="architect">Architect</option>
+                                    <option value="interior_designer">Interior Designer</option>
+                                    <option value="bim_modeller">BIM Modeller</option>
+                                    <option value="intern">Internship</option>
+                                </select>
+                            </div>
+                            <div class="form-group-full">
+                                <label>Upload Resume / CV (PDF, DOCX)</label>
+                                <input type="file" accept=".pdf,.doc,.docx" style="padding-top: 10px;" required>
+                            </div>
+                            <div class="form-group-full">
+                                <label>Message</label>
+                                <textarea rows="3" placeholder="A brief about you..."></textarea>
+                            </div>
+                            <div class="form-group-full" style="margin-top: 10px;">
+                                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px;">Send Application</button>
+                            </div>
+                        </form>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-inspaire">
+        <div class="container">
+            <div class="fi-grid">
+                <!-- Col 1: Information -->
+                <div class="fi-col">
+                    <h4 class="fi-title">Quick links</h4>
+                    <ul class="fi-links">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="career.html">Career</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 2: Services -->
+                <div class="fi-col">
+                    <h4 class="fi-title">Services</h4>
+                    <ul class="fi-links">
+                        <li><a href="architecture.html">Architecture</a></li>
+                        <li><a href="interiors.html">Interiors</a></li>
+                        <li><a href="construction.html">Construction</a></li>
+                        <li><a href="industrial-design.html">Industrial Design</a></li>
+                        <li><a href="statutory-process.html">Statutory Process</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact Us -->
+                <div class="fi-col">
+                    <h4 class="fi-title">Contact Us</h4>
+                    <div class="fi-contact-list">
+                        <div class="fi-contact-item">
+                            <div class="fi-icon"><i class="fa-solid fa-phone"></i></div>
+                            <a href="tel:+918056137902">+91 80561 37902</a>
+                        </div>
+                        <div class="fi-contact-item">
+                            <div class="fi-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <a href="mailto:info@globe33.in">info@globe33.in</a>
+                        </div>
+                        <div class="fi-contact-item">
+                            <div class="fi-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <span>Kumaraguru Complex, No. 2D-2nd Floor, <br>Velachery Main Road, Chennai - 600
+                                073.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Col 4: Logo & Socials -->
+                <div class="fi-col">
+                    <div class="fi-logo-small" style="margin-bottom: 25px;">
+                        <img src="assests/img/Global33_logo.png" alt="Globe33 logo"
+                            style="height: 45px; filter: brightness(0) invert(1);">
+                    </div>
+                    <h4 class="fi-title" style="margin-bottom: 20px;">Follow Us</h4>
+                    <div class="fi-social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="fi-bottom">
+                <p>Copyright © 2024. All rights reserved Global33 Powered by <a href="https://mbwit.net" target="_blank"
+                        rel="noopener noreferrer"
+                        style="color: inherit; text-decoration: none; font-weight: 600;">MBW</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
